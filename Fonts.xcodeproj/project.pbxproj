@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		85956649212EDA770065ADF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85956648212EDA770065ADF2 /* AppDelegate.m */; };
-		8595664C212EDA780065ADF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8595664B212EDA780065ADF2 /* ViewController.m */; };
-		8595664F212EDA790065ADF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8595664D212EDA790065ADF2 /* Main.storyboard */; };
 		85956651212EDA990065ADF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85956650212EDA990065ADF2 /* Assets.xcassets */; };
-		85956654212EDA990065ADF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85956652212EDA990065ADF2 /* LaunchScreen.storyboard */; };
 		85956657212EDA990065ADF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85956656212EDA990065ADF2 /* main.m */; };
 		85956661212EDA990065ADF2 /* FontsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85956660212EDA990065ADF2 /* FontsTests.m */; };
 		8595666C212EDA990065ADF2 /* FontsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8595666B212EDA990065ADF2 /* FontsUITests.m */; };
+		8595667A212EDC730065ADF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85956679212EDC730065ADF2 /* Main.storyboard */; };
+		8595667D212EE4040065ADF2 /* BIDFavoritesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8595667C212EE4040065ADF2 /* BIDFavoritesList.m */; };
+		85956680212EEBF30065ADF2 /* BIDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8595667F212EEBF30065ADF2 /* BIDRootViewController.m */; };
+		85956683212FE7A80065ADF2 /* BIDFontListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85956682212FE7A80065ADF2 /* BIDFontListViewController.m */; };
+		85956686212FF7640065ADF2 /* BIDFontSizesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85956685212FF7640065ADF2 /* BIDFontSizesViewController.m */; };
+		85956689212FFDE20065ADF2 /* BIDFontInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85956688212FFDE20065ADF2 /* BIDFontInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,11 +41,7 @@
 		85956644212EDA770065ADF2 /* Fonts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fonts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85956647212EDA770065ADF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		85956648212EDA770065ADF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8595664A212EDA780065ADF2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8595664B212EDA780065ADF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8595664E212EDA790065ADF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85956650212EDA990065ADF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		85956653212EDA990065ADF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85956655212EDA990065ADF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85956656212EDA990065ADF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8595665C212EDA990065ADF2 /* FontsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +50,17 @@
 		85956667212EDA990065ADF2 /* FontsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8595666B212EDA990065ADF2 /* FontsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontsUITests.m; sourceTree = "<group>"; };
 		8595666D212EDA990065ADF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85956679212EDC730065ADF2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8595667B212EE4040065ADF2 /* BIDFavoritesList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDFavoritesList.h; sourceTree = "<group>"; };
+		8595667C212EE4040065ADF2 /* BIDFavoritesList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDFavoritesList.m; sourceTree = "<group>"; };
+		8595667E212EEBF30065ADF2 /* BIDRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDRootViewController.h; sourceTree = "<group>"; };
+		8595667F212EEBF30065ADF2 /* BIDRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDRootViewController.m; sourceTree = "<group>"; };
+		85956681212FE7A70065ADF2 /* BIDFontListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDFontListViewController.h; sourceTree = "<group>"; };
+		85956682212FE7A80065ADF2 /* BIDFontListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDFontListViewController.m; sourceTree = "<group>"; };
+		85956684212FF7630065ADF2 /* BIDFontSizesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDFontSizesViewController.h; sourceTree = "<group>"; };
+		85956685212FF7640065ADF2 /* BIDFontSizesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDFontSizesViewController.m; sourceTree = "<group>"; };
+		85956687212FFDE20065ADF2 /* BIDFontInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDFontInfoViewController.h; sourceTree = "<group>"; };
+		85956688212FFDE20065ADF2 /* BIDFontInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDFontInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +113,18 @@
 			children = (
 				85956647212EDA770065ADF2 /* AppDelegate.h */,
 				85956648212EDA770065ADF2 /* AppDelegate.m */,
-				8595664A212EDA780065ADF2 /* ViewController.h */,
-				8595664B212EDA780065ADF2 /* ViewController.m */,
-				8595664D212EDA790065ADF2 /* Main.storyboard */,
+				85956679212EDC730065ADF2 /* Main.storyboard */,
+				8595667B212EE4040065ADF2 /* BIDFavoritesList.h */,
+				8595667C212EE4040065ADF2 /* BIDFavoritesList.m */,
+				8595667E212EEBF30065ADF2 /* BIDRootViewController.h */,
+				8595667F212EEBF30065ADF2 /* BIDRootViewController.m */,
+				85956681212FE7A70065ADF2 /* BIDFontListViewController.h */,
+				85956682212FE7A80065ADF2 /* BIDFontListViewController.m */,
+				85956684212FF7630065ADF2 /* BIDFontSizesViewController.h */,
+				85956685212FF7640065ADF2 /* BIDFontSizesViewController.m */,
+				85956687212FFDE20065ADF2 /* BIDFontInfoViewController.h */,
+				85956688212FFDE20065ADF2 /* BIDFontInfoViewController.m */,
 				85956650212EDA990065ADF2 /* Assets.xcassets */,
-				85956652212EDA990065ADF2 /* LaunchScreen.storyboard */,
 				85956655212EDA990065ADF2 /* Info.plist */,
 				85956656212EDA990065ADF2 /* main.m */,
 			);
@@ -235,9 +252,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85956654212EDA990065ADF2 /* LaunchScreen.storyboard in Resources */,
 				85956651212EDA990065ADF2 /* Assets.xcassets in Resources */,
-				8595664F212EDA790065ADF2 /* Main.storyboard in Resources */,
+				8595667A212EDC730065ADF2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8595664C212EDA780065ADF2 /* ViewController.m in Sources */,
+				85956680212EEBF30065ADF2 /* BIDRootViewController.m in Sources */,
+				85956683212FE7A80065ADF2 /* BIDFontListViewController.m in Sources */,
 				85956657212EDA990065ADF2 /* main.m in Sources */,
+				8595667D212EE4040065ADF2 /* BIDFavoritesList.m in Sources */,
+				85956686212FF7640065ADF2 /* BIDFontSizesViewController.m in Sources */,
+				85956689212FFDE20065ADF2 /* BIDFontInfoViewController.m in Sources */,
 				85956649212EDA770065ADF2 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,25 +318,6 @@
 			targetProxy = 85956668212EDA990065ADF2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		8595664D212EDA790065ADF2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8595664E212EDA790065ADF2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		85956652212EDA990065ADF2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				85956653212EDA990065ADF2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8595666E212EDA990065ADF2 /* Debug */ = {

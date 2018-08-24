@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BIDRootViewController.h
 //  Fonts
 //
 //  Created by Alex Chekodanov on 23.08.2018.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface BIDRootViewController : UITableViewController
 
 @end
-
