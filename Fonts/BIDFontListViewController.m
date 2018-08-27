@@ -15,13 +15,21 @@
 
 @property (assign, nonatomic) CGFloat cellPointSize;
 
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UISlider *sliderForFavorites;
+@property (strong, nonatomic) IBOutlet UILabel *labelForFavorites;
+@property (strong, nonatomic) IBOutlet UIView *viewForFavorites;
+
+@property (assign, nonatomic) float sizeOfFont;
+
+
 @end
 
 @implementation BIDFontListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.sizeOfFont = 17;
     UIFont *preferredTableViewFont = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
     self.cellPointSize = preferredTableViewFont.pointSize;
     if (self.showsFavorites)
@@ -31,17 +39,33 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    if(!self.showsFavorites)
+    {
+        self.viewForFavorites.hidden = YES;
+    }
     if (self.showsFavorites)
     {
+        UIEdgeInsets contentInset = self.tableView.contentInset;
+        contentInset.bottom = self.viewForFavorites.bounds.size.height;
+        [self.tableView setContentInset:contentInset];
         self.fontNames = [BIDFavoritesList sharedFavoritesList].favorites;
         [self.tableView reloadData];
     }
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
+    
+
 - (UIFont *)fontForDisplayAtIndexPath: (NSIndexPath *)indexPath
 {
     NSString *fontName = self.fontNames[indexPath.row];
-    return [UIFont fontWithName:fontName size:self.cellPointSize];
+    UIFont *font = [UIFont fontWithName:fontName size:self.cellPointSize];
+    if (self.showsFavorites)
+        font = [font fontWithSize:self.sizeOfFont];
+    return font;
 }
 
 #pragma mark - Table view data source
@@ -56,7 +80,6 @@
 {
     static NSString *CellIdentifier = @"FontName";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
     cell.textLabel.font = [self fontForDisplayAtIndexPath:indexPath];
     cell.textLabel.text = self.fontNames[indexPath.row];
     cell.detailTextLabel.text = self.fontNames[indexPath.row];
@@ -94,6 +117,14 @@
     [[BIDFavoritesList sharedFavoritesList] moveItemAtIndex:sourceIndexPath.row toIndex:destinationIndexPath.row];
     self.fontNames = [BIDFavoritesList sharedFavoritesList].favorites;
 }
+
+- (IBAction)slideFontSize:(UISlider *)slider
+{
+    self.sizeOfFont = roundf(slider.value);
+    self.labelForFavorites.text = [NSString stringWithFormat:@"%.0f",self.sizeOfFont];
+    [self.tableView reloadData];
+}
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

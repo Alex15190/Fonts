@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BIDFontListViewController : UITableViewController
+@interface BIDFontListViewController : UIViewController
 
 @property (copy, nonatomic) NSArray *fontNames;
 @property (assign, nonatomic) BOOL showsFavorites;
