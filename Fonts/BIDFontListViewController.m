@@ -30,6 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.sizeOfFont = 17;
+    self.labelForFavorites.text = @"17";
     UIFont *preferredTableViewFont = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
     self.cellPointSize = preferredTableViewFont.pointSize;
     if (self.showsFavorites)
